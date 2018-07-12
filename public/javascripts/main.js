@@ -131,7 +131,7 @@ function getPastSponsors() {
   for (let k = 0; k < pastSponsors.length; k++) {
     let content = "";
     content += '<figure class="sponsor"><a href="//' + pastSponsors[k].url + '">';
-    content += '<img src="/images/pastSponsors/' + pastSponsors[k].logo + '" alt="' + pastSponsors[k].name + '">';
+    content += '<img src="images/pastSponsors/' + pastSponsors[k].logo + '" alt="' + pastSponsors[k].name + '">';
     content += '<i class=""></i>';
     content += '</a></figure>';
     document.querySelector("#sponsors>div").innerHTML += content;
@@ -142,7 +142,7 @@ function getPastSpeakers() {
   for (let k = 0; k < pastSpeakers.length; k++) {
     let content = "";
     content += '<div class="speaker">';
-    content += '<img src="/images/pastSpeakers/' + pastSpeakers[k].photo + '" alt="' + pastSpeakers[k].name + '">';
+    content += '<img src="images/pastSpeakers/' + pastSpeakers[k].photo + '" alt="' + pastSpeakers[k].name + '">';
     content += '<div class="speakerDetails"><p class="speakerName">' + pastSpeakers[k].name + '</p>';
     content += '<p class="speakerTagline">' + pastSpeakers[k].tagline;
     content += '<a href="' + pastSpeakers[k].url + '"><i class="fas fa-info-circle"></i></a></p></div>';
