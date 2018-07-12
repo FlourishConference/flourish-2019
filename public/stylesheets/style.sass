@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900')
+@import 'trees'
+
+$purple: #8F1A95
+$darkPurple: #39053F
+$white: #ffffff
+$black: #111111
+$transparentBlack: rgba(0,0,0,0.7)
+$transparent: rgba(0,0,0,0)
+html
+  scroll-behavior: smooth
+  text-align: center
+  font-family: Montserrat, Lato, Helvetica, Arial, sans-serif
+  font-size: 20px
+
+html,body
+  margin: 0
+
+a
+  text-decoration: none
+  color: $white
+
+h1,h2,h3,h4,h5,h6
+  color: $purple
+a.button
+  background-color: $white
+  border: 1px solid $white
+  color: $purple
+  padding: 15px 32px
+  text-align: center
+  text-decoration: none
+  display: inline-block
+  font-size: 20px
+  margin: 5px
+  transition: all 0.2s
+  &:hover
+    color: $white
+    background-color: $transparent
+  i
+    border-right: 1px solid
+    padding: 0 5px
+    margin: 0 5px
+.sidenav
+  background: red
+  height: 100%
+  width: 0
+  position: fixed
+  z-index: 1
+  top: 0
+  left: 0
+  background-color: $black
+  overflow-x: hidden
+  padding-top: 20px
+  transition: 0.5s
+  a
+    padding: 5px
+    text-decoration: none
+    font-size: 25px
+    color: $white
+    display: block
+    transition: 0.3s
+    &:hover
+      color: $purple
+  .closebtn
+    position: absolute
+    font-size: 36px
+    top: 0
+    left: 10px
+.toggleNav
+  position: fixed
+  top: 0
+  left: 0
+  padding: 15px
+  background-color: $transparentBlack
+#main,#contact
+  background: $purple
+  background: -moz-radial-gradient(top, $purple 0%, $darkPurple 100%)
+  background: -webkit-radial-gradient(top, $purple 0%,$darkPurple 100%)
+  background: radial-gradient(to bottom, $purple 0%,$darkPurple 100%)
+  padding-top: 75px
+  padding-bottom: 75px
+  color: $white
+  h1,h2,h3,h4,h5,h6
+    color: $white
+  .copyright
+    a
+      text-decoration: underline
+
+#main
+  transition: margin-left .5s
+  .logo
+    img
+      max-width: 800px
+      width: 80%
+  p
+    font-size: 30px
+#contact
+  display: grid
+  grid-template-areas: "organizers" "social"
+  #social
+    grid-area: "social"
+  #organizers
+    grid-area: "organizers"
+  #social, #organizers
+    margin: 10px
+#organizers
+  img
+    width: auto
+    height: 50px
+    margin: 0 20px
+#speakers, #sponsors
+  figure
+    display: inline-block
+    figcaption
+      display: inline-block
+#about
+  article
+    border: $purple solid
+    margin: 20px
+    width: 400px
+    display: inline-block
+    vertical-align: top
+    h2
+      color: $white
+      background-color: $purple
+      margin: 0
+      padding: 20px 10px
+    p
+      text-align: left
+      padding: 20px
+
+
+#sponsors
+  padding-bottom: 50px
+  figure
+    padding: 20px
+    img
+      height: 50px
+  figure:nth-child(-n+5)
+    img
+      height: 75px
+
+.speaker
+  margin: 10px
+  position: relative
+  overflow: hidden
+  width: 300px
+  height: 300px
+  position: relative
+  display: inline-block
+  box-shadow: 0px 3px 15px $transparentBlack
+  .speakerName
+    color: $white
+    background-color: $transparentBlack
+
+    margin: 0
+    padding: 15px 10px
+    font-weight: 600
+
+  .speakerTagline
+    color: $white
+    font-weight: 600
+    a
+      color: $white
+      font-size: 40px
+      display: block
+      position: absolute
+      bottom: 10px
+      right: 25px
+  img
+    height: 300px
+    width: 300px
+    filter: blur(0)
+    transition: filter 0.2s
+  .speakerDetails
+    position: absolute
+    width: 100%
+    top: 250px
+    background-color: $transparentBlack
+    transition: top 0.2s
+    height: 300px
+  &:hover
+    .speakerDetails
+      top: 0
+    img
+      filter: blur(10px)
