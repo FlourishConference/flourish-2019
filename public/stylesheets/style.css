@@ -124,6 +124,16 @@
   top: 50vh;
   left: 80vw; }
 
+@media (max-width: 480px) {
+  .bg-tree:nth-child(8),
+  .bg-tree:nth-child(3),
+  .bg-tree:nth-child(5),
+  .bg-tree:nth-child(7),
+  .bg-tree:nth-child(15),
+  .bg-tree:nth-child(13),
+  .bg-tree:nth-child(17) {
+    display: none; } }
+
 html {
   scroll-behavior: smooth;
   text-align: center;
@@ -150,7 +160,7 @@ a.button {
   display: inline-block;
   font-size: 20px;
   margin: 5px;
-  transition: all 0.2s; }
+  transition: all 0.25s; }
   a.button:hover {
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0); }
@@ -169,15 +179,15 @@ a.button {
   left: 0;
   background-color: #111111;
   overflow-x: hidden;
-  padding-top: 20px;
-  transition: 0.5s; }
+  padding-top: 45px;
+  transition: 0.25s; }
   .sidenav a {
     padding: 5px;
     text-decoration: none;
     font-size: 25px;
     color: #ffffff;
     display: block;
-    transition: 0.3s; }
+    transition: 0.25s; }
     .sidenav a:hover {
       color: #8F1A95; }
   .sidenav .closebtn {
@@ -207,7 +217,8 @@ a.button {
     text-decoration: underline; }
 
 #main {
-  transition: margin-left .5s; }
+  transition: margin-left 0.25s;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7); }
   #main .logo img {
     max-width: 800px;
     width: 80%; }
@@ -287,13 +298,13 @@ a.button {
     height: 300px;
     width: 300px;
     filter: blur(0);
-    transition: filter 0.2s; }
+    transition: filter 0.25s; }
   .speaker .speakerDetails {
     position: absolute;
     width: 100%;
     top: 250px;
     background-color: rgba(0, 0, 0, 0.7);
-    transition: top 0.2s;
+    transition: top 0.25s;
     height: 300px; }
   .speaker:hover .speakerDetails {
     top: 0; }
