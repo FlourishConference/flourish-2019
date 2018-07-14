@@ -12,7 +12,6 @@ html
   text-align: center
   font-family: Montserrat, Lato, Helvetica, Arial, sans-serif
   font-size: 20px
-
 html,body
   margin: 0
 
@@ -26,26 +25,24 @@ a.button
   background-color: $white
   border: 1px solid $white
   color: $purple
-  padding: 15px 32px
+  padding: 10px
   text-align: center
   text-decoration: none
   display: inline-block
-  font-size: 20px
+  font-size: 18px
   margin: 5px
   transition: all 0.25s
   &:hover
     color: $white
     background-color: $transparent
   i
-    border-right: 1px solid
-    padding: 0 5px
-    margin: 0 5px
+    margin: 0 10px
 .sidenav
   background: red
   height: 100%
   width: 0
   position: fixed
-  z-index: 1
+  z-index: 11
   top: 0
   left: 0
   background-color: $black
@@ -67,6 +64,7 @@ a.button
     top: 0
     left: 10px
 .toggleNav
+  z-index: 10
   position: fixed
   top: 0
   left: 0
@@ -92,7 +90,7 @@ a.button
   .logo
     img
       max-width: 800px
-      width: 80%
+      width: 90%
   p
     font-size: 30px
 #contact
@@ -118,7 +116,7 @@ a.button
   article
     border: $purple solid
     margin: 20px
-    width: 400px
+    max-width: 400px
     display: inline-block
     vertical-align: top
     h2
@@ -160,14 +158,17 @@ a.button
 
   .speakerTagline
     color: $white
-    font-weight: 600
+    font-weight: 400
+    padding: 0 10px
+    text-align: left
+    font-size: 18px
     a
       color: $white
       font-size: 40px
       display: block
       position: absolute
       bottom: 10px
-      right: 25px
+      right: 15px
   img
     height: 300px
     width: 300px
