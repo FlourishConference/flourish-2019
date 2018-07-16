@@ -42,5 +42,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+// Remove 'hidden' property when JS available
+document.getElementById("hamburger").style = '';
 trees();
 countdown();
