@@ -246,10 +246,9 @@ a.button {
 
 #about article {
   border: #8F1A95 solid;
-  margin: 20px;
-  max-width: 400px;
-  display: inline-block;
-  vertical-align: top; }
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto; }
   #about article h2 {
     color: #ffffff;
     background-color: #8F1A95;
@@ -257,7 +256,7 @@ a.button {
     padding: 20px 10px; }
   #about article p {
     text-align: left;
-    padding: 20px; }
+    padding: 30px; }
 
 #sponsors {
   padding-bottom: 50px; }
